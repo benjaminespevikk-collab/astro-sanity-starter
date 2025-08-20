@@ -20,3 +20,14 @@ export default defineConfig({
         port: 3000
     }
 });
+import { defineConfig } from 'astro/config';
+import react from '@astrojs/react';
+
+// + eventuelle andre integrasjoner du allerede har (tailwind, etc.)
+
+export default defineConfig({
+  integrations: [
+    react(),
+    // ...dine eksisterende integrasjoner
+  ],
+});
